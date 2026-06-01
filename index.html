@@ -166,6 +166,8 @@
       border-radius: 16px;
       transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
       cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
 
     .status-card:hover {
@@ -303,14 +305,14 @@
 
     <!-- Description -->
     <p class="subtitle" id="main-subtitle">
-      이 페이지는 GitHub와 Cloudflare Pages를 통해 성공적으로 버전 관리 및 자동 배포가 완료된 안티그래비티의 첫 번째 공간입니다.
+      이 페이지는 GitHub, Cloudflare Pages, Netlify를 통해 성공적으로 버전 관리 및 자동 배포가 완료된 안티그래비티의 첫 번째 공간입니다.
     </p>
 
     <!-- Interactivity: Status Board -->
     <div class="status-group" id="status-board" role="region" aria-label="배포 및 연동 현황">
       
       <!-- GitHub Status Card -->
-      <div class="status-card" id="card-github" tabindex="0">
+      <a href="https://github.com/junchee/my_first_git" target="_blank" rel="noopener noreferrer" class="status-card" id="card-github" tabindex="0">
         <span class="status-icon" aria-hidden="true">🐙</span>
         <div class="status-info">
           <p class="status-label">Repository Connection</p>
@@ -319,10 +321,10 @@
         <div class="indicator">
           <span class="dot" aria-hidden="true"></span>
         </div>
-      </div>
+      </a>
 
       <!-- Cloudflare Status Card -->
-      <div class="status-card" id="card-cloudflare" tabindex="0">
+      <a href="https://my-first-git.pages.dev" target="_blank" rel="noopener noreferrer" class="status-card" id="card-cloudflare" tabindex="0">
         <span class="status-icon" aria-hidden="true">⚡</span>
         <div class="status-info">
           <p class="status-label">Deployment Platform</p>
@@ -331,7 +333,19 @@
         <div class="indicator">
           <span class="dot" aria-hidden="true"></span>
         </div>
-      </div>
+      </a>
+
+      <!-- Netlify Status Card -->
+      <a href="https://my-first-git.netlify.app" target="_blank" rel="noopener noreferrer" class="status-card" id="card-netlify" tabindex="0">
+        <span class="status-icon" aria-hidden="true">🚀</span>
+        <div class="status-info">
+          <p class="status-label">Backup Deployment</p>
+          <p class="status-value">Netlify Live</p>
+        </div>
+        <div class="indicator">
+          <span class="dot" aria-hidden="true"></span>
+        </div>
+      </a>
 
     </div>
 
